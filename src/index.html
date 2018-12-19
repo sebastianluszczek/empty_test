@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
+        crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="background-pattern">
+        <div class="pat1 pat"></div>
+        <div class="pat2 pat"></div>
+        <div class="pat3 pat"></div>
+        <div class="pat4 pat"></div>
+        <div class="pat5 pat"></div>
+        <div class="pat6 pat"></div>
+
+        <div class="bg-overlay"></div>
+        <header id="header">
+            <nav>
+                <div class="nav-logo">
+                    <img id="logo_img" src="./img/Logo_im.png" alt="">
+                    <img id="logo_txt" src="./img/Logo_txt.png" alt="">
+                </div>
+                <div class="nav-container">
+                    <ul class="nav_bar">
+                        <li><a class="who nav-btn">Who we are</a></li>
+                        <li><a class="what nav-btn">What we do</a></li>
+                        <li><a class="work nav-btn">Who we work with</a></li>
+                        <li><a class="jobs nav-btn">Jobs</a></li>
+                        <li><a class="cont nav-btn">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="border-container">
+                <div class="b_tl b"></div>
+                <div class="b_tr b"></div>
+                <div class="b_bl b"></div>
+                <div class="b_br b"></div>
+                <div class="dots-container">
+                    <div class="who dot1 dot nav-btn"></div>
+                    <div class="what dot2 dot nav-btn"></div>
+                    <div class="work dot3 dot nav-btn"></div>
+                    <div class="jobs dot4 dot nav-btn"></div>
+                    <div class="cont dot5 dot nav-btn"></div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="top-separator" style="width: 100%; height: 5vh"></div>
+            <section id="front" class="section">
+                <div class="scroller">
+                    <img src="./img/Logo2.png">
+                    <br><br><br>
+                    <a class="btn-down"><i class="fas fa-chevron-down fa-4x"></i></a>
+                </div>
+            </section>
+            <section id="who" class="section" data-section="who_scroll">
+                <div class="container">
+
+                    <h2>Who we are</h2>
+                    <div class="about">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, illo sequi aliquid a,
+                            veritatis pariatur, nisi iure debitis fugiat consequatur ex fugit voluptate
+                            dignissimos. Modi non eos ipsum sequi nam! Mollitia accusamus possimus harum placeat,
+                            deleniti nam tempora sapiente rem nihil porro? Reprehenderit architecto nulla hic
+                            quibusdam quos eum assumenda id quo accusantium molestias, dicta magnam consequatur
+                            enim omnis dolorum vitae, sapiente deserunt repellendus rem deleniti impedit nemo!
+                            Voluptatibus quas soluta laboriosam earum sunt inventore maxime deserunt autem?</p>
+                    </div>
+                    <!-- <button class="next_section"><i class="fas fa-chevron-down fa-4x"></i></button> -->
+            </section>
+            <section id="what" class="section" data-section="what_scroll">
+                <div class="container">
+                    <h2>What we do</h2>
+                    <div class="about">
+                        <iframe id="what_iframe" src="what.html" frameborder="0"></iframe>
+                    </div>
+                    <!-- <button class="next_section"><i class="fas fa-chevron-down fa-4x"></i></button> -->
+                </div>
+            </section>
+            <section id="work" class="section" data-section="work_scroll">
+                <div class="container">
+                    <h2>Who we work with</h2>
+                    <div class="about">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, illo sequi aliquid a,
+                            veritatis pariatur, nisi iure debitis fugiat consequatur ex fugit voluptate
+                            dignissimos. Modi non eos ipsum sequi nam! Mollitia accusamus possimus harum placeat,
+                            deleniti nam tempora sapiente rem nihil porro? Reprehenderit architecto nulla hic
+                            quibusdam quos eum assumenda id quo accusantium molestias, dicta magnam consequatur
+                            enim omnis dolorum vitae, sapiente deserunt repellendus rem deleniti impedit nemo!
+                            Voluptatibus quas soluta laboriosam earum sunt inventore maxime deserunt autem?</p>
+                    </div>
+                    <!-- <button class="next_section"><i class="fas fa-chevron-down fa-4x"></i></button> -->
+                </div>
+            </section>
+            <section id="jobs" class="section" data-section="jobs_scroll">
+                <div class="container">
+                    <h2>Jobs</h2>
+                    <div class="about">
+                        <iframe id="jobs_iframe" src="jobs.html" frameborder="0"></iframe>
+                    </div>
+                    <!-- <button class="next_section"><i class="fas fa-chevron-down fa-4x"></i></button> -->
+                </div>
+            </section>
+            <section id="cont" class="section" data-section="cont_scroll">
+                <div class="container">
+                    <h2>Contact</h2>
+                    <div class="about">
+                        <h3>Awesome Industries</h3>
+                        <p>ul. Św. Krzyża 11/4</p>
+                        <p>31-580 Kraków, Poland</p>
+                        <p>office@awesome-ind.com</p>
+                    </div>
+                </div>
+            </section>
+            <div class="bottom-separator" style="width: 100%; height: 5vh"></div>
+        </main>
+    </div>
+    <div class="job-modal">
+        <span class="close-btn-job">X</span>
+        <h2 id="modal_header"></h2>
+        <p id="modal_text"></p>
+    </div>
+    <div class="img-modal">
+        <span class="close-btn-img">X</span>
+        <img>
+    </div>
+</body>
+
+</html>

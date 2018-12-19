@@ -1,0 +1,132 @@
+@import 'variables';
+@import 'header';
+@import 'animations';
+@import 'background';
+@import 'modals';
+@import 'job_content';
+@import 'what_content';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+main {
+    z-index: 1;
+    overflow-y: hidden;
+}
+
+.section {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    padding-top: 3%;
+}
+
+h2 {
+    font-size: 46px;
+    font-weight: 300;
+    padding: 20px 0;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 150%;
+    text-align: justify;
+}
+
+.container {
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+    padding: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.container h2 {
+    padding-top: 4%;
+    padding-left: 10%;
+}
+
+.container .about {
+    padding-top: 3%;
+    width: 50%;
+    margin: 0 auto;
+    height: 80%;
+}
+
+.container .about iframe {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+#front .scroller {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 40%;
+    text-align: center;
+    z-index: 1;
+    transform: translate(-50%, -50%) matrix(1, 0.2, -0.2, 0.8, 0, 0);
+}
+
+#front .scroller a {
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+}
+
+.btn-down {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    width: 260px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+
+#cont .container .about {
+    padding-top: 12%;
+    width: 36%;
+}
+
+#cont .container .about h3 {
+    font-size: 34px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.next_section {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    color: #555;
+    z-index: 2;
+}
