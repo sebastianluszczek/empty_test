@@ -5,6 +5,7 @@
 @import 'modals';
 @import 'job_content';
 @import 'what_content';
+@import 'contact';
 
 
 * {
@@ -50,7 +51,6 @@ p {
     width: 80%;
     height: 90%;
     margin: 0 auto;
-    padding: 50px;
     position: relative;
     z-index: 1;
 }
@@ -105,18 +105,6 @@ p {
     margin: 0 auto;
     line-height: 60px;
     text-decoration: none;
-}
-
-
-#cont .container .about {
-    padding-top: 12%;
-    width: 36%;
-}
-
-#cont .container .about h3 {
-    font-size: 34px;
-    font-weight: 300;
-    padding-bottom: 20px;
 }
 
 .next_section {
