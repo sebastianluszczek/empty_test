@@ -54,7 +54,9 @@ document.addEventListener('DOMContentLoaded', function () {
             sectionName: 'section',
             scrollSpeed: 1000,
             offset: -90,
+            overflowScroll: false,
             scrollbars: false,
+            standardScrollElements: 'iframe',
             before: function (i, panels) {
                 console.log(i);
                 nav_bar.forEach(btn => {
