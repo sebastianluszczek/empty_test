@@ -1,14 +1,13 @@
-body#what_content {
+#what_content {
     text-align: center;
-    font-family: arial;
 
     img {
         width: 80%;
+        padding: 20px;
     }
 
     p {
         text-align: justify;
         color: white;
-        font-weight: 300;
     }
 }
