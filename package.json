@@ -8,7 +8,7 @@
     "prod": "webpack --mode production",
     "build": "webpack-dev-server",
     "build:prod": "webpack -p",
-    "node": "node app"
+    "start": "node app"
   },
   "author": "seba",
   "license": "ISC",

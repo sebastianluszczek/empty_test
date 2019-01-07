@@ -7,6 +7,8 @@ const request = require('request');
 
 const app = express();
 
+const port = process.env.PORT || 8080;
+
 // body parser 
 app.use(bodyParser.urlencoded({
     extended: false
@@ -104,6 +106,6 @@ app.post('/send', (req, res) => {
     });
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Server started.....');
 })
