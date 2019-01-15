@@ -35,9 +35,10 @@ module.exports = {
                 }
             },
             {
-                test: /\.scss$/,
+                test: /\.(css|scss)$/,
                 use: extractPlugin.extract({
-                    use: ['css-loader', 'resolve-url-loader', 'sass-loader']
+                    fallback: 'style-loader',
+                    use: ['css-loader', 'resolve-url-loader', 'postcss-loader', 'sass-loader']
                 })
             },
             {
@@ -45,7 +46,7 @@ module.exports = {
                 use: ['html-loader']
             },
             {
-                test: /\.(jpg|png)$/,
+                test: /\.(jpg|png|jpeg)$/,
                 use: [{
                     loader: 'file-loader',
                     options: {
@@ -57,6 +58,19 @@ module.exports = {
             }
         ]
     },
+    devServer: {
+        historyApiFallback: {
+            rewrites: [{
+                    from: /^\/$/,
+                    to: '/index.html'
+                },
+                {
+                    from: /^\/what/,
+                    to: '/what.html'
+                }
+            ]
+        }
+    },
     plugins: [
         new webpack.ProvidePlugin({
             $: 'jquery',
@@ -66,10 +80,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: 'src/index.html'
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'jobs.html',
-            template: 'src/jobs.html'
         }),
         new HtmlWebpackPlugin({
             filename: 'what.html',

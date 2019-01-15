@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+    a {
+        text-decoration: none;
+    }
+
+    .section {
+        width: 100%;
+        // height: 100vh;
+        position: relative;
+    }
+
+    .container {
+        position: absolute;
+        // width: 80%;
+        width: 70%;
+        height: 80%;
+        top: 14%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 2%;
+
+        .section-content {
+            padding-top: 50px;
+        }
+
+        .titles {
+            position: absolute;
+            top: 0px;
+        }
+
+        .section-title {
+            color: $main-color;
+            font-size: 36px;
+            display: inline-block;
+        }
+
+        .section-title.main {
+            font-weight: 300;
+        }
+
+        .section-title.sub {
+            font-weight: 600;
+            position: relative;
+            top: 36px;
+        }
+
+        .section-title.main::after {
+            content: '';
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-right: 2px solid $sec-grey;
+            transform: rotate(45deg) translateY(50%);
+        }
+
+        .prev_section,
+        .next_section {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .arrow {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            color: $main-color;
+            width: 30px;
+            height: 30px;
+            border-width: 2px 2px 0 0;
+            border-style: solid;
+            margin: 4px;
+        }
+
+        .prev_section {
+            top: 0;
+
+            .arrow {
+                transform: rotate(-45deg);
+            }
+        }
+
+        .next_section {
+            bottom: 0;
+
+            .arrow {
+                transform: rotate(135deg);
+            }
+        }
+
+        .go_back {
+            position: absolute;
+            top: 0px;
+            left: -40px;
+            font-size: 22px;
+            color: $main-color;
+
+            .arrow {
+                transform: rotate(-135deg);
+            }
+        }
+    }
+
+    .btn {
+        height: 56px;
+        border-radius: 0;
+        border: 0;
+        box-shadow: 0;
+        font-weight: 600;
+        text-align: center;
+        line-height: 56px;
+        cursor: pointer;
+    }
+
+    .btn a {
+        text-decoration: none;
+    }
+
+    .btn-main {
+        color: #fff;
+        background-color: $main-color;
+    }
+
+    .btn-main a {
+        color: #fff;
+    }
+
+    .btn-minor {
+        color: $main-color;
+        background-color: transparent;
+        border: 2px solid;
+    }
+
+    .btn-minor a {
+        color: $main-color;
+    }
+
+    .res-monitor {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        border: 1px dotted darkred;
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        .container {
+            width: 75%;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        .btn {
+            height: 46px;
+            line-height: 46px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .container {
+            width: 85%;
+        }
+    }
+
+    @media screen and (max-width: 599px) {
+        .container {
+            width: 90%;
+            height: 90%;
+            top: 60px;
+
+            .section-content {
+                padding-top: 20px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .arrow {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .btn {
+            height: 36px;
+            line-height: 36px;
+        }
+
+        .hide_on_small {
+            display: none !important;
+        }
+    }
+}

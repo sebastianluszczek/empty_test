@@ -1,0 +1,29 @@
+#cont_sect {
+    .contact-data {
+        width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        h3 {
+            color: $main-color;
+            font-size: 28px;
+            padding: 20px 0;
+        }
+
+        p {
+            font-size: 18px;
+            padding: 5px 0;
+        }
+    }
+
+    @media screen and (max-width: 599px) {
+        .contact-data {
+
+            h3 {
+                font-size: 24px;
+            }
+        }
+    }
+}

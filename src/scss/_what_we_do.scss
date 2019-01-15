@@ -1,0 +1,64 @@
+#what_we_do {
+
+    .section-content {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-gap: 4%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+        align-self: center;
+
+        img {
+            display: block;
+            width: 100%;
+            padding: 10px;
+        }
+    }
+
+    .descript {
+        align-self: center;
+        text-align: justify;
+    }
+
+    .desc-icons {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+
+        .tech-icon {
+            justify-self: center;
+        }
+
+        .tech-icon img {
+            height: 60px;
+        }
+    }
+
+    @media screen and (max-width: 599px) {
+        .section-content {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(auto-fit);
+            padding-top: 90px;
+            grid-gap: 0;
+            padding-right: 10px;
+        }
+
+        .desc-icons {
+            margin-top: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+        }
+
+        .section-title {
+            font-size: 24px;
+
+            .main::after {
+                position: relative;
+                left: 20px;
+            }
+        }
+    }
+}
