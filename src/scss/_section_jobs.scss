@@ -57,8 +57,17 @@
     }
 
     @media screen and (max-width: 599px) {
+
+
+
+        .section-content {
+            padding-top: 50px;
+        }
+
         .job-content {
             grid-template-columns: 1fr;
+            grid-row-gap: 30px;
+            margin: 10px auto;
         }
 
         .box {
@@ -77,7 +86,7 @@
                 width: 100px;
                 height: 36px;
                 line-height: 36px;
-                transform: translateY(70%);
+                transform: translateY(60%);
             }
         }
     }

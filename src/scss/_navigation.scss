@@ -134,7 +134,7 @@
             width: 20px;
             display: grid;
             grid-row-gap: 20px;
-            z-index: 2;
+            z-index: 1;
         }
 
         .dots-container .dot {
@@ -236,15 +236,17 @@
             .side_nav_icon {
                 position: fixed;
                 top: 20px;
-                right: 60px;
+                right: 20px;
                 z-index: 2;
+                width: 40px;
+                height: 32px;
 
                 .bar {
                     position: absolute;
                     left: 0;
                     display: block;
                     width: 40px;
-                    height: 4px;
+                    height: 3px;
                     background-color: $main-color;
                     border-radius: 2px;
                     transition: .4s;
@@ -362,6 +364,65 @@
             .side_nav {
                 top: -50%;
                 right: -50%;
+            }
+
+            .side_nav_icon {
+                width: 32px;
+                height: 24px;
+
+                .bar {
+                    width: 32px;
+                    height: 2px;
+
+                    &:nth-child(1) {
+                        top: 0;
+                    }
+
+                    &:nth-child(2) {
+                        top: 10px;
+                    }
+
+                    &:nth-child(3) {
+                        top: 20px;
+                    }
+                }
+            }
+
+            .dots-container .dot {
+                width: 6px;
+                height: 6px;
+
+                &::after,
+                &::before {
+                    width: 10px;
+                    height: 10px;
+                }
+
+                &::after {
+                    transform: rotate(135deg) translate(8px, -20px);
+                }
+
+                &::before {
+                    transform: rotate(135deg) translate(8px, 30px);
+                }
+
+            }
+
+            .dots-container .dot.active {
+
+                &::after,
+                &::before {
+                    width: 10px;
+                    height: 10px;
+                }
+
+                &::after {
+                    transform: rotate(135deg) translate(6px, -4px);
+                }
+
+                &::before {
+                    transform: rotate(135deg) translate(6px, 14px);
+                }
             }
 
             .dots-container.inner {

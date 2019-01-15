@@ -38,17 +38,23 @@
         .section-content {
             grid-template-columns: auto;
             grid-gap: 6px;
-            grid-template-rows: 2fr 3fr;
-            align-content: stretch;
-            padding-top: 80px;
+            grid-template-rows: auto;
+            align-content: flex-start;
+            padding-top: 50px;
             padding-right: 10px;
 
             .image {
-                width: 100%;
-                padding: 10px;
+                width: 90%;
+                padding: 10px 0;
+                margin: 0 auto;
 
                 img {}
             }
+        }
+
+        .desc-btns {
+            margin-top: 0;
+            font-size: 14px;
         }
     }
 }
