@@ -9,6 +9,7 @@ body {
 
     a {
         text-decoration: none;
+        cursor: pointer;
     }
 
     .section {
@@ -57,7 +58,7 @@ body {
             display: inline-block;
             width: 50px;
             height: 50px;
-            border-right: 2px solid $sec-grey;
+            border-right: 1px solid $sec-grey;
             transform: rotate(45deg) translateY(50%);
         }
 
@@ -78,7 +79,7 @@ body {
             color: $main-color;
             width: 30px;
             height: 30px;
-            border-width: 2px 2px 0 0;
+            border-width: 1px 1px 0 0;
             border-style: solid;
             margin: 4px;
         }
@@ -139,7 +140,7 @@ body {
     .btn-minor {
         color: $main-color;
         background-color: transparent;
-        border: 2px solid;
+        border: 1px solid;
     }
 
     .btn-minor a {
@@ -173,6 +174,10 @@ body {
     @media screen and (max-width: 991px) {
         .container {
             width: 85%;
+
+            .section-title.main::after {
+                display: none;
+            }
         }
     }
 
